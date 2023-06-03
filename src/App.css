@@ -1,0 +1,112 @@
+.App {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.heading {
+  font-size: 1.5rem;
+  margin-top: 5rem;
+}
+.heading-text{
+  font-size: 1.5rem;
+  padding: 0 48rem;
+  line-height: 1.5;
+}
+.input-wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.input{
+  width: 40rem;
+  height: 3rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  border: 2px solid #FBBF24;
+  outline: none;
+  transition: .1s;
+  font-size: 2rem;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  font-weight: 350;
+}
+.input:focus{
+  border: 2px solid #be901b;
+}
+.add-button{
+  margin-left: 2rem;
+  padding: .2rem .1rem; 
+  width: 7rem;
+  height: 5.3rem;
+  border-radius: 1rem;
+  outline: none;
+  background-color: #10B981;
+  color: white;
+  border: none;
+  transition: .2s;
+}
+.add-button:hover, .add-button:focus{
+  cursor: pointer;
+  background-color: #15eea6;
+}
+.list-wrapper{
+  font-family: Pangolin, cursive;
+  background-color: #FEF3C7;
+  width: 44rem;
+  min-height: 50vh;
+  font-family: 'Pangolin', cursive;
+  font-size: 2rem;
+  margin-top: 4rem;
+  padding: 2rem 4rem;
+  border-radius: 1rem;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.list-heading{
+  display: flex;
+  justify-content: space-between;
+}
+.list-heading-text{
+  color: #be901b;
+}
+.list-heading-select{
+  border: 2px solid #be901b;
+  border-radius: 1rem;
+  padding: .7rem;
+  font-size: 1.5rem;
+}
+.list-heading-select > option {
+  line-height: 20px;
+  margin-top: 1rem;
+}
+.list-content ol {
+  display: inline;
+  line-height: 1.5;
+}
+.list-content ol li{
+  cursor: pointer;
+  position: relative;
+  left: 2rem;
+}
+.list-content ol li .todo-title{
+  left: 0;
+  position: absolute;
+}
+.list-content ol li .todo-title-done{
+  color: #9CA3AF;
+  left: 0;
+  position: absolute;
+  text-decoration: line-through;
+  transition: .3s;
+}
+.list-content ol li a .trash-can{
+  right: 1.7rem;
+  position: absolute;
+  display: none;
+  color: #B45309;
+}
+.list-content ol li:hover .trash-can{
+  display: block;
+}
